@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tech-task"
+version = "0.1.0"
+description = "Document Versioning Service with MinIO storage"
+authors = ["Damir Baktygaliyev <damir050602@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+sqlalchemy = "^2.0.44"
+psycopg2-binary = "^2.9.10"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.6.1"
+python-multipart = "^0.0.20"
+minio = "^7.2.10"
+openai = "^2.9.0"
+pdfplumber = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
