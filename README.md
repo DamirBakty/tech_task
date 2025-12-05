@@ -79,7 +79,7 @@ USE_MOCK_ANALYZER=True
 
 3. Запустите сервисы:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Это запустит:
@@ -112,7 +112,7 @@ poetry install
 
 3. Запустите MinIO отдельно:
 ```bash
-docker-compose up -d minio
+docker compose up -d minio
 ```
 
 4. Создайте файл `.env` (см. выше)
@@ -342,7 +342,7 @@ print(f"Analysis: {analysis['result_text']}")
 │   ├── config.py                 # Конфигурация
 │   └── main.py                   # Точка входа
 ├── storage/                       # Локальная директория
-├── docker-compose.yml             # Docker Compose конфигурация
+├── docker compose.yml             # Docker Compose конфигурация
 ├── Dockerfile                     # Multi-stage Docker build
 ├── pyproject.toml                 # Poetry зависимости
 ├── poetry.lock                    # Locked зависимости
@@ -385,12 +385,12 @@ from src.application.use_cases import UploadFileUseCase
 ## Остановка сервисов
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 Для удаления данных:
 ```bash
-docker-compose down -v
+docker compose down -v
 ```
 
 ## Особенности реализации
